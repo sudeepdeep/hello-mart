@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% block title %}{% endblock %}</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+    *{
+            
+            text-align:center;
+            margin-left: 0px;
+            margin-top: 0px;
+            margin-right:0px;
+            
+        }
+        .heading{
+            display:block;
+            background-color: black;
+            top: 0;
+            left: 0;
+            padding: 20px;
+          
+            width: 100%;    
+        }
+        .heading h1{
+            color:white;
+            font-family: 'Permanent Marker', cursive;
+            text-decoration: line-through;
+            text-decoration-color: black;
+            font-size: 50px;
+        }
+        .heading p{
+            color:#f03948;
+            font-family: Quicksand;
+        }
+
+
+    .nav-bar{
+        background-color:  #e3e3e3;
+        position: sticky;
+        top: 0px;
+
+    }
+    .nav-bar ul{
+      
+        display:flex;
+        padding: 35px;
+        justify-content: space-around;
+    }
+    .nav-bar ul li{
+        list-style-type: none;
+        cursor: pointer;
+        font-family: Quicksand
+    }
+
+
+    .nav-bar ul li:hover{
+        color: #f03948;
+       
+    }
+
+    .custcount{
+        margin-top: 80px;
+        font-size:30px;
+        font-family: Quicksand;
+        padding: 20px;
+    }
+    .custcount span{
+        font-size:40px;
+        color:#f03948;
+    }
+    .container{
+        display:flex;
+        font-family:Quicksand;
+    }
+    .container .card1, .card2 , .card3, .card4{
+        margin: 20px;
+    }
+
+    .matter {
+        padding:80px;
+        justify-content:center;
+        background-color: #e3e3e3;
+    }
+    .matter h3{
+        color:#f03948;
+        font-family: Quicksand;
+        padding: 20px;
+    }
+    .matter p{
+
+        justify-content:center;
+    }
+    .matter footer{
+        padding-top: 90px;
+    }
+
+    .card-title{
+            color:#f03948;
+        }
+        nav a{
+    text-decoration:none;
+    color:black;
+}
+nav a:hover{
+    color: #f03948;
+}
+    @media screen and (max-width: 768px){
+
+        .container{
+            font-size:15px;
+            display:  block;
+            padding-left: 90px;
+        }
+        .container .card-title{
+            font-size:16px;
+            color:#f03948;
+        }
+        
+    }
+    </style>
+</head>
+<body>
+<div class="heading">
+    <h1>Hello Mart</h1>
+    <p>An All-In-One Place :)</p>
+</div>
+<nav class = "nav-bar">
+    <ul>
+        <li class = "home"><a href = "index.html">Home</a></li>
+        <li>Products</li>
+        <li>Contact Us</li>
+        <li><a href = "form.html">Join Hello-Mart</a></li>
+    </ul>
+</nav>
+<div class="custcount">
+    <p>Over <span> 0 </span>+ Happy Customers !</p>
+</div>
+
+<div class = "container">
+<div class="card1" style="width: 18rem;">
+    <img src="mensclothin.jpg" class="card-img-top" alt="..." width="200px" height="220px">
+    <div class="card-body">
+      <h5 class="card-title">Men's Clothing</h5>
+      <p class="card-text">A Place Where you can find different brands of shirts/ Trousers and Many things.</p>
+      <a href="#" class="btn btn-primary">Shop Now</a>
+    </div>
+  </div>
+
+
+  <div class="card2" style="width: 18rem;">
+    <img src="womensclothing.jpg" class="card-img-top" alt="..." width="200px" height="220px">
+    <div class="card-body">
+      <h5 class="card-title">Women's Clothing</h5>
+      <p class="card-text">A Place Where you can find different brands of Top's/ Jeans and Many things.</p>
+      <a href="#" class="btn btn-primary">Shop Now</a>
+    </div>
+  </div>
+
+  <div class="card3" style="width: 18rem;">
+    <img src="kidsclothing.jpg" class="card-img-top" alt="..." width="200px" height="220px">
+    <div class="card-body">
+      <h5 class="card-title">Kid's Clothing</h5>
+      <p class="card-text">A Place Where you can find different brands of Shirt's/ Jeans and Many things.</p>
+      <a href="#" class="btn btn-primary">Shop Now</a>
+    </div>
+  </div>
+
+
+  <div class="card4" style="width: 18rem;">
+    <img src="manyproducts.jpg" class="card-img-top" alt="..." width="200px" height="220px">
+    <div class="card-body">
+      <h5 class="card-title">Other Products</h5>
+      <p class="card-text">A Place Where you can find different brands of Many other prodcuts ....</p>
+      <a href="#" class="btn btn-primary">Shop Now</a>
+    </div>
+  </div>
+
+</div>
+
+
+<div class = "matter">
+    <h3>About Hello-Mart</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, vel placeat exercitationem asperiores laudantium deserunt? Eligendi necessitatibus quasi nam aut consectetur numquam ab doloremque facilis debitis autem, fuga quisquam iusto!
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, vel placeat exercitationem asperiores laudantium deserunt? Eligendi necessitatibus quasi nam aut consectetur numquam ab doloremque facilis debitis autem, fuga quisquam iusto!
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, vel placeat exercitationem asperiores laudantium deserunt? Eligendi necessitatibus quasi nam aut consectetur numquam ab doloremque facilis debitis autem, fuga quisquam iusto!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, vel placeat exercitationem asperiores laudantium deserunt? Eligendi necessitatibus quasi nam aut consectetur numquam ab doloremque facilis debitis autem, fuga quisquam iusto!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, vel placeat exercitationem asperiores laudantium deserunt? Eligendi necessitatibus quasi nam aut consectetur numquam ab doloremque facilis debitis autem, fuga quisquam iusto!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, vel placeat exercitationem asperiores laudantium deserunt? Eligendi necessitatibus quasi nam aut consectetur numquam ab doloremque facilis debitis autem, fuga quisquam iusto!</p>
+        <footer>CopyRight Claim By @hello-mart.co.in</footer>
+    </div>
+       
+<script src="sandbox.js"></script>
+</body>
+</html>
